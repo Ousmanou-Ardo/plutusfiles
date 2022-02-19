@@ -1,1 +1,15 @@
-my thinrd submisson
+my third submisson
+This will read one line at a time and print it out
+to the terminal as it goes along. So you may be asking, how wide is this pipe then? How often
+will the disk be accessed? Well, for text files, the default buﬀering is line-buﬀering usually. That
+means that the smallest part of the file to be read at once is one line. That's why in this case it
+actually reads a line, prints it to the output, reads the next line, prints it, etc. For binary files, the
+default buﬀering is usually block-buﬀering. That means that it will read the file chunk by chunk.
+The chunk size is some size that your operating system thinks is cool.
+You can control how exactly buﬀering is done by using the hSetBuﬀering function. It takes a
+handle and a BuﬀerMode and returns an I/O action that sets the buﬀering. BuﬀerMode is a simple
+enumeration data type and the possible values it can hold are: NoBuﬀering, LineBuﬀering or
+BlockBuﬀering (Maybe Int) . The Maybe Int is for how big the chunk should be, in bytes. If it's
+Nothing, then the operating system determines the chunk size. NoBuﬀering means that it will
+be read one character at a time. NoBuﬀering usually sucks as a buﬀering mode because it has to
+access the disk so much.
