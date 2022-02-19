@@ -1,3 +1,4 @@
+import Data.List
 import System.Environment
 import System.IO
 import System.IO.Error
@@ -13,3 +14,11 @@ case ioeGetFileName e of Just path -> putStrLn $ "Whoops! File does not exist at
 path
 Nothing -> putStrLn "Whoops! File does not exist at unknown location!"
 | otherwise = ioError e
+
+
+
+solveRPN :: (Num a) => String -> a
+solveRPN expression = head (foldl foldingFunction
+[] (words expression))
+where
+foldingFunction stack item = ...
