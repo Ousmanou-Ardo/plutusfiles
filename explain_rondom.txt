@@ -1,0 +1,5 @@
+It's very similar to the previous version, only instead of making a function that takes a generator
+and then calls itself recursively with the new updated generator, we do all the work in main. After
+telling the user whether they were correct in their guess or not, we update the global generator
+and then call main again. Both approaches are valid but I like the first one more since it does less
+stuﬀ in main and also provides us with a function that we can reuse easily
