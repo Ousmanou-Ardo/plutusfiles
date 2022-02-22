@@ -19,3 +19,4 @@ hClose handle
 hClose tempHandle
 removeFile "todo.txt"
 renameFile tempName "todo.txt"
+--this is just a comment
