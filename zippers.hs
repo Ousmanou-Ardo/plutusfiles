@@ -16,3 +16,11 @@ Folder "root"
 , File "dijon_poupon.doc" "best mustard"
 , Folder "programs"
 [ File "fartwizard.exe" "10gotofart"
+, File "owl_bandit.dmg" "mov eax, h00t"
+, File "not_a_virus.exe" "really not a virus"
+, Folder "source code"
+[ File "best_hs_prog.hs" "main = print (fix error)"
+, File "random.hs" "main = print 4"
+]
+]
+]
