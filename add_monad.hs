@@ -1,9 +1,9 @@
-instance Monad Maybe where
+{- instance Monad Maybe where
 return x = Just x
 Nothing >>= f = Nothing
 Just x >>= f
 = f x
-fail _ = Nothing
+fail _ = Nothing -}
 --let's an example where monad is used
 
 type Birds = Int
