@@ -1,1 +1,2 @@
-this
+this is a file for commenting on the progress of the project.
+what's the point of making this
