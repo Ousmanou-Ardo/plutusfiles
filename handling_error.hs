@@ -7,3 +7,4 @@ if fileExists
 then do contents <- readFile fileName
 putStrLn $ "The file has " ++ show (length (lines contents)) ++ " lines!"
 else do putStrLn "The file doesn't exist!"
+-- error handling is so important .
