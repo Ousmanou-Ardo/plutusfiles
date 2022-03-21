@@ -7,3 +7,4 @@ putStrLn "The arguments are:"
 mapM putStrLn args
 putStrLn "The program name is:"
 putStrLn progName
+-- this another comment from me.
